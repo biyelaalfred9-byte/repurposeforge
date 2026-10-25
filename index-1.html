@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RepurposeForge: turn one blog post into 7 social posts</title>
+<meta name="description" content="RepurposeForge turns a blog post into ready-to-post content for LinkedIn, X, Facebook, Instagram, Threads, your newsletter and short video. One-time $19. Bring your own Gemini API key.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14172b;--soft:#4a5068;--bg:#f6f7fb;--card:#fff;--line:#dfe2ee;--ac:#4f46e5;--ac2:#3730a3;--hi:#fde68a}
+@media (prefers-color-scheme:dark){:root{--ink:#eef0fa;--soft:#aab0c8;--bg:#0f1220;--card:#171b2e;--line:#2a2f48;--ac:#8b86ff;--ac2:#a5a1ff;--hi:#4a3d0a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2rem,6vw,3.4rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,4vw,2.1rem)}
+h3{font-size:1.1rem}
+a{color:var(--ac)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:18px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font:700 1.2rem "Space Grotesk",sans-serif;color:var(--ink);text-decoration:none}
+nav a{margin-left:16px;color:var(--soft);text-decoration:none;font-size:.95rem}
+nav a:hover,nav a:focus-visible{color:var(--ac)}
+section{padding:56px 0}
+.hero{padding-top:48px}
+.lead{font-size:1.15rem;color:var(--soft);max-width:34em}
+.btn{display:inline-block;background:var(--ac);color:#fff;padding:13px 24px;border-radius:8px;font-weight:600;text-decoration:none}
+.btn:hover,.btn:focus-visible{background:var(--ac2)}
+@media (prefers-color-scheme:dark){.btn{color:#0f1220}}
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+@media(max-width:720px){.demo{grid-template-columns:1fr}}
+.pane{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.pane small{display:block;color:var(--soft);margin-bottom:8px}
+.pane p{margin:0 0 .7em;font-size:.97rem}
+.post{border-left:3px solid var(--ac);padding-left:12px;margin-bottom:14px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.list{columns:2;padding-left:20px}
+@media(max-width:560px){.list{columns:1}}
+ol.steps{padding-left:22px}
+ol.steps li{margin-bottom:.8em}
+.price{background:var(--card);border:2px solid var(--ac);border-radius:14px;padding:28px;max-width:440px}
+.price .n{font:700 3rem "Space Grotesk",sans-serif}
+.price ul{padding-left:20px;margin:.8em 0 1.2em}
+details{border-bottom:1px solid var(--line);padding:12px 0}
+summary{cursor:pointer;font-weight:600}
+.legal{background:var(--card);border-top:1px solid var(--line)}
+.legal h3{margin-top:1.6em}
+.legal p,.legal li{color:var(--soft);font-size:.97rem}
+.fill{background:var(--hi);padding:0 4px;border-radius:3px}
+footer{padding:28px 0;color:var(--soft);font-size:.9rem;border-top:1px solid var(--line)}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">RepurposeForge</a>
+<nav aria-label="Main"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#terms">Terms</a><a href="#privacy">Privacy</a><a href="#refunds">Refunds</a></nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+<h1>Turn one blog post into a week of social posts</h1>
+<p class="lead">Paste in a post, pick your audience and tone, and get ready-to-publish content for seven formats in one click. You pay once and use your own Google Gemini API key.</p>
+<p><a class="btn" href="#pricing">Get RepurposeForge for $19</a></p>
+<div class="demo" aria-label="Example of input and output">
+<div class="pane"><small>You paste a blog post</small>
+<p>“We talked to 12 founders who cancelled. Our onboarding took six clicks and failed on Safari. We fixed step two, added a progress indicator, and 4 of them re-subscribed the same afternoon.”</p></div>
+<div class="pane"><small>You get posts for each platform</small>
+<div class="post"><strong>LinkedIn</strong><p>Churn hit 14%. I stopped guessing and called 12 people who left. Here is what step two was costing us…</p></div>
+<div class="post"><strong>X thread</strong><p>1/ Our churn problem was not the product. It was one broken onboarding step. A thread…</p></div></div>
+</div>
+<p style="color:var(--soft);font-size:.9rem">Example text for illustration. Your results depend on your input and the AI model.</p>
+</div></section>
+
+<section id="what"><div class="wrap"><h2>What you get from each blog post</h2>
+<ul class="list"><li>LinkedIn post</li><li>X (Twitter) thread</li><li>Facebook post</li><li>Instagram carousel and caption</li><li>Newsletter snippet with subject lines</li><li>Threads post</li><li>Short-form video script</li></ul>
+<p>Choose from five tones (Professional, Casual, Bold, Educational, Witty), type in any audience, and add samples of your own writing so the posts sound like you. Your draft is saved in your browser, and the app works in light and dark mode.</p></div></section>
+
+<section id="how"><div class="wrap"><h2>How it works</h2>
+<ol class="steps"><li><strong>Download the app.</strong> You get one HTML file and a short setup guide.</li>
+<li><strong>Add your free Gemini API key.</strong> Create it in Google AI Studio and paste it into the app. It stays in your browser and goes only to Google.</li>
+<li><strong>Paste a blog post and generate.</strong> Copy each post or copy everything at once.</li></ol>
+<p>You need a modern browser and an internet connection. Google’s usage limits, terms and any charges apply to your own key.</p></div></section>
+
+<section id="pricing"><div class="wrap"><h2>Pricing</h2>
+<div class="price"><div class="n">$19</div><div>One-time payment. No subscription.</div>
+<ul><li>RepurposeForge app (one HTML file)</li><li>Setup guide (PDF)</li><li>14-day refund</li></ul>
+<a class="btn" href="mailto:biyelaalfred9@gmail.com?subject=Buy%20RepurposeForge%20(%2419)" id="buy">Email to buy</a>
+<p style="font-size:.85rem;color:var(--soft);margin:.9em 0 0">Pay by mobile money (MTN or Airtel, Zambia), bank transfer or USDT (a dollar-pegged cryptocurrency). Email us and we reply with the payment details. Once your payment is confirmed, we email you the app and the setup guide.</p></div></div></section>
+
+<section id="faq"><div class="wrap"><h2>Questions</h2>
+<details><summary>Do I need to pay for AI usage?</summary><p>RepurposeForge uses your own Google Gemini API key. Google sets the limits and any charges for that key. Check your plan in Google AI Studio.</p></details>
+<details><summary>Is my API key safe?</summary><p>The key is stored only in your browser’s local storage and sent only to Google’s Gemini API. Local storage is not encrypted, so use the app on a device you trust. You can clear the key at any time.</p></details>
+<details><summary>Does it run on my phone?</summary><p>A computer works best. Phones can open the file in a browser, but it is less convenient.</p></details>
+<details><summary>What if it doesn’t work for me?</summary><p>Email us. We will help you get it running or refund you within 14 days.</p></details>
+<details><summary>Can the posts be wrong?</summary><p>Yes. AI output can contain errors, so read and edit every post before you publish it.</p></details></div></section>
+
+<section class="legal"><div class="wrap">
+<h2 id="terms">Terms of service</h2>
+<p>These terms apply to your purchase and use of RepurposeForge (the “Product”), sold by Alfred Biyela (“we”, “us”), based in Zambia. By buying or using the Product you accept them.</p>
+<h3>License</h3>
+<p>Your purchase gives you one personal, non-transferable license to use the Product. You may use the posts it generates for any lawful purpose, including commercial use. You may not resell, share, sublicense or redistribute the Product or its files, or remove its notices.</p>
+<h3>Your API key and third-party services</h3>
+<p>The Product works with your own Google Gemini API key. You are responsible for your key, for Google’s terms and usage limits, and for any charges Google applies. We are not affiliated with Google.</p>
+<h3>AI-generated content</h3>
+<p>Output is generated by an AI model and may be inaccurate, incomplete or similar to other content. You are responsible for reviewing it and for what you publish.</p>
+<h3>Availability and changes</h3>
+<p>The Product relies on third-party models and services that can change or be withdrawn, such as a model being retired. The Product lets you change the model name in Settings. We do not guarantee uninterrupted operation.</p>
+<h3>Warranty and liability</h3>
+<p>The Product is provided “as is” without warranties of any kind, to the extent the law allows. Our total liability for any claim is limited to the price you paid for the Product. Nothing here limits rights you have under consumer law that cannot be excluded.</p>
+<h3>Orders and payments</h3>
+<p>The price is $19 USD. You can pay by mobile money (in kwacha at that day’s exchange rate), bank transfer or USDT. To order, email us and we will reply with payment details. You pay any transfer or network fees charged by your bank, mobile money provider or exchange. We send the Product files to your email address once payment is confirmed. You are responsible for any taxes that apply to your purchase where you live.</p>
+<h3>Contact</h3>
+<p><a href="mailto:biyelaalfred9@gmail.com">biyelaalfred9@gmail.com</a></p>
+
+<h2 id="privacy" style="margin-top:2em">Privacy policy</h2>
+<p><strong>The app.</strong> RepurposeForge runs in your browser. We do not run a server for it and do not receive your text, your posts or your API key. Your key, drafts, writing samples, model setting and theme are saved in your browser’s local storage on your device. You can remove them with the Clear Key button or by clearing your browser data.</p>
+<p><strong>Google.</strong> When you generate posts, the text you enter is sent directly from your browser to Google’s Gemini API, using your key. Google’s privacy policy and terms apply to that data.</p>
+<p><strong>Purchases.</strong> When you order, we collect your email address and the details of your payment, such as the transaction ID and the amount, so we can confirm your payment, deliver the Product and give support. We do not collect or store card details.</p>
+<p><strong>Support emails.</strong> If you contact us, we use your message and email address only to reply and help you.</p>
+<p><strong>Website.</strong> This website does not use advertising or analytics cookies. Fonts are loaded from Google Fonts, which may receive your IP address.</p>
+<p><strong>Your rights.</strong> You can ask us what we hold about you and ask us to delete it by emailing <a href="mailto:biyelaalfred9@gmail.com">biyelaalfred9@gmail.com</a>. Data held by Google is governed by its policies.</p>
+
+<h2 id="refunds" style="margin-top:2em">Refund policy</h2>
+<p>You can ask for a full refund within 14 days of purchase, for any reason. We will also try to fix any problem running the Product first if you prefer.</p>
+<p>To request a refund, email <a href="mailto:biyelaalfred9@gmail.com">biyelaalfred9@gmail.com</a> with the email address you used to buy. Refunds are paid back the way you paid (mobile money, bank transfer or USDT), minus any transfer fees, and can take up to a few days. After a refund, your license ends and you should delete the Product files.</p>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Alfred Biyela · RepurposeForge · <a href="mailto:biyelaalfred9@gmail.com">biyelaalfred9@gmail.com</a> · <a href="#terms">Terms</a> · <a href="#privacy">Privacy</a> · <a href="#refunds">Refunds</a></div></footer>
+</body>
+</html>
